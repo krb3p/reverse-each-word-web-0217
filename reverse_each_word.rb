@@ -11,9 +11,6 @@ def reverse_each_word (sentence)
 end
 
 def reverse_each_word (sentence)
-  sentence.split.collect {|word| word.reverse}.join(" ")
-end
-
-def no_iteration (sentence)
-  sentence.reverse.split.reverse.join(" ")
+  array = sentence.split
+  array.collect {|word| word.reverse}.join(" ")
 end
